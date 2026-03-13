@@ -19,3 +19,10 @@ Thumbs.db
 # Temp
 *.tmp
 *.temp
+
+# Skills
+.agent/
+.agents/
+.kilocode/
+.roo/
+skills-lock.json
