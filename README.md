@@ -8,11 +8,11 @@ Agent skills for Hong Kong cinema movie ticketing.
 
 User Flow:
 
-- Ask what’s on -> 
-- Chat film overviews -> 
-- Pick what takes your fancy -> 
-- Agent finds cinemas & times -> 
-- Select your slot -> 
+- Ask what’s on --> 
+- Chat film overviews --> 
+- Pick what takes your fancy --> 
+- Agent finds cinemas & times --> 
+- Select your slot --> 
 - Straight to booking 
 
 No scrolling, just chatting. 🎟️
