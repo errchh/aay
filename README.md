@@ -14,6 +14,15 @@ Agent skills for retrieving Hong Kong cinema showtimes and booking links.
 
 - **hk-cinema-now-playing**: Fetches current HK cinema screenings with booking links.
 
+## Buy Me A Coffee
+
+Your support helps keep this project and future open‑source efforts going.
+
+```
+0x1e052453c89b5ee5C37E9c62dAAAcb407AEde125
+```
+
+
 ## API Keys
 
 Copy `.env.example` to `.env` and add:
