@@ -8,6 +8,7 @@ description: |
   3. Filter showtimes by cinema/date when user specifies
   4. Book tickets via direct link
   
+  Note: Uses /upcoming endpoint to include rescreening of older popular movies.
   Use when user asks about HK movies, cinema showtimes, or ticket booking.
 ---
 
@@ -17,7 +18,7 @@ description: |
 
 ### TMDB (Movie List)
 ```
-GET https://api.themoviedb.org/3/movie/now_playing?region=HK&language=zh-HK
+GET https://api.themoviedb.org/3/movie/upcoming?region=HK&language=zh-HK
 ```
 
 Headers:
@@ -52,7 +53,7 @@ Headers:
 
 ### Step 1: List Movies
 When user asks "what's playing in Hong Kong" or similar:
-- Call TMDB: `GET /movie/now_playing?region=HK&language=zh-HK`
+- Call TMDB: `GET /movie/upcoming?region=HK&language=zh-HK`
 - Cache movie list with TMDB IDs
 - Show numbered list (Chinese titles from `title` field)
 
@@ -136,7 +137,7 @@ If user says "book it" without details, ask which cinema and time they prefer.
 
 ## Response Parsing
 
-From `/movie/now_playing`:
+From `/movie/upcoming`:
 - `results[]`: Array of movies
   - `id`: TMDB movie ID
   - `title`: Chinese title
