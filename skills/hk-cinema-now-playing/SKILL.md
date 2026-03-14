@@ -25,14 +25,27 @@ Headers:
 - `Authorization: Bearer ${TMDB_API_KEY}`
 - `accept: application/json`
 
-### International Showtimes (Cinema Showtimes - RapidAPI)
+### International Showtimes (Direct API - Recommended)
 ```
-GET https://international-showtimes.p.rapidapi.com/v5/movies/{tmdb_id}/showtimes?country=HK
+GET https://api.internationalshowtimes.com/v5/showtimes?movie_id={tmdb_id}&countries=HK
+```
+
+Headers:
+- `X-API-Key: ${IS_API_KEY}`
+- OR `Authorization: Token token=${IS_API_KEY}`
+
+Also supports `countries=HK` (plural) - both work.
+
+### RapidAPI Wrapper (Legacy - often broken)
+```
+GET https://international-showtimes.p.rapidapi.com/v5/movies/{tmdb_id}/showtimes?countries=HK
 ```
 
 Headers:
 - `X-RapidAPI-Key: ${RAPIDAPI_KEY}`
 - `X-RapidAPI-Host: international-showtimes.p.rapidapi.com`
+
+Note: The RapidAPI endpoints frequently return errors. Use the direct API instead.
 
 ## Cinema Chain Booking URLs (fallback when API doesn't provide booking_link)
 
@@ -72,7 +85,7 @@ When user asks about a specific movie (e.g., "第一套詳細啲", "毒蛇律師
 
 1. Get TMDB movie ID from cached list
 2. Call TMDB: `GET /movie/{id}?language=zh-HK` for title + overview
-3. Call IS: `GET /v5/movies/{tmdb_id}/showtimes?country=HK`
+3. Call IS: `GET /v5/showtimes?movie_id={tmdb_id}&countries=HK`
 4. Extract unique cinemas (from `showtimes[].cinema.name`)
 5. Extract unique dates (from `showtimes[].start_at`, format as "3月14日")
 
