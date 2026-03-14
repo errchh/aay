@@ -4,16 +4,18 @@ Agent skills for Hong Kong cinema movie ticketing.
 
 ## Skills
 
-**hk-cinema-now-playing**: Fetches current HK cinema screenings with booking links.
+**hk-cinema-now-playing**: Meet your new AI cinema concierge. 🍿 
 
-    User Flow (chat with your ticketing agent):
+User Flow:
 
-    1. Ask the agent about what's currently showing
-    2. Agent chats through the film options with overviews
-    3. Tell the agent which film takes your fancy
-    4. Agent lists which cinemas are screening it and when
-    5. Pick your preferred cinema and showing
-    6. Agent sends you straight to the cinema's booking page
+- Ask what’s on -> 
+- Chat film overviews -> 
+- Pick what takes your fancy -> 
+- Agent finds cinemas & times -> 
+- Select your slot -> 
+- Straight to booking 
+
+No scrolling, just chatting. 🎟️
 
 ## Screenshots
 
