@@ -1,6 +1,6 @@
 # aay – All Around You
 
-Hong Kong cinema movie ticketing agent skills. 
+Agent skills for Hong Kong cinema movie ticketing. 
 
 ## Skills
 
