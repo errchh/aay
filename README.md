@@ -1,10 +1,10 @@
 # aay – All Around You
 
-Agent skills for Hong Kong cinema movie ticketing. 
+An agent skill to discover Hong Kong's cinema with real-time showtimes and seamless, direct-to-booking access.
 
 ## Skills
 
-**hk-cinema-now-playing**: Meet your new AI cinema concierge. 🍿 
+**hk-cinema-now-playing**: Meet your AI cinema concierge. 🍿 
 
 User Flow:
 
@@ -29,7 +29,7 @@ No scrolling, just chatting. 🎟️
 
 ## Buy Me A Coffee
 
-Your support helps keep this project and future open‑source efforts going.
+If you find value in my work, consider supporting my open-source journey.
 
 ```
 0x1e052453c89b5ee5C37E9c62dAAAcb407AEde125
